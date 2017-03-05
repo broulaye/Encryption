@@ -13,7 +13,7 @@ The following **required** functionality is completed:
   * [x]  Required: Decrypt the government message
   * [x]  Required: Encrypt a response and include in this README
   *I heard about your current situation. Do you know who hacked APEX? -- The Chairman
-   Yes our nemesis Dark Shadow did.
+  Yes our nemesis Dark Shadow did.
 
 3\. Generate Public-Private Keys
   * [x]  Required: Repair the key generator code
