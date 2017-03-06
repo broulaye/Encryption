@@ -44,25 +44,25 @@ function key_encrypt($string, $key, $cipher_method) {
 
 function key_decrypt($string, $key, $cipher_method) {
 
-    if($cipher_method == 'AES-256-CBC') {
-      // Needs a key of length 32 (256-bit)
-      $key = str_pad($key, 32, '*');
+  if($cipher_method == 'AES-256-CBC') {
+    // Needs a key of length 32 (256-bit)
+    $key = str_pad($key, 32, '*');
+  }
+  elseif($cipher_method == 'AES-192-CBC') {
+    // Needs a key of length 24
+    $key = str_pad($key, 24, '*');
+  }
+  elseif($cipher_method == 'DES-EDE3-CBC') {
+    // Needs a key of length 24
+    $key = str_pad($key, 24, '*');
+  }
+  else {//BF-CBC
+    // Needs a key of length 4-56
+    if(!has_length($agent['codename'], array('min' => 4, 'max' => 56))){
+      $key = str_pad($key, 56, '*');
     }
-    elseif($cipher_method == 'AES-192-CBC') {
-      // Needs a key of length 24
-      $key = str_pad($key, 24, '*');
-    }
-    elseif($cipher_method == 'DES-EDE3-CBC') {
-      // Needs a key of length 24
-      $key = str_pad($key, 24, '*');
-    }
-    else {//BF-CBC
-      // Needs a key of length 4-56
-      if(!has_length($agent['codename'], array('min' => 4, 'max' => 56))){
-        $key = str_pad($key, 56, '*');
-      }
 
-    }
+  }
 
 
   // Base64 decode before decrypting
