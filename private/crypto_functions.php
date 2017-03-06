@@ -20,7 +20,7 @@ function key_encrypt($string, $key, $cipher_method) {
   }
   else {//BF-CBC
     // Needs a key of length 4-56
-    if(!has_length($agent['codename'], array('min' => 4, 'max' => 56)){
+    if(!has_length($agent['codename'], array('min' => 4, 'max' => 56))){
       $key = str_pad($key, 56, '*');
     }
   }
