@@ -63,18 +63,27 @@ The following **required** functionality is completed:
 The following objectives are **optional**:
 
 * Bonus Objective 1\.
-  * [ ]  Track down the bugs in the code and fix them.
+  * [x]  Track down the bugs in the code and fix them.
 
 * Bonus Objective 2\.
-  * [ ]  Write a report of your discoveries (longer than 300 characters).
-  * [ ]  Compose a secure email for sending over an insecure network.
-  * [ ]  Include the email with your encrypted report in this README.
+  * [x]  Write a report of your discoveries (longer than 300 characters).
+  * [x]  Compose a secure email for sending over an insecure network.
+  * [x]  Include the email with your encrypted report in this README.
+  * The key to decrypt the message below is encrypted using an asymmetric algorithm:
+  x5LZP7Wiin5qa9Lz5fc4HfFjBPIf/vMoET3cdRoRgmFqqGbWGGKpoMyCsYuqOLsWk1Ec3Tib+ASjTRJjc7qZ6t1FMfHsI0HyHQ8rHph0nqIcmNqY5GDExndIC4gWFQxSHndU1s8AdX4DADZsm3xjuIMFBBNMOccYZba+18mCnaVGap4Z+7I18iKOFDvyaw0VvvWIUSePEx5rndUTnY+03SLymGr7m6L58FzAYQMt75miezMCh7p3951dsg8VfaB02GEgdJZ/8zJT3VveeIEAkgtVv1eXJQdCFJUwAsEk+lrENO1GsHKQqzQsjUR473rbVswVWvPLccMZV1iRqXfuppawa9uTye2WiXzY/MZ2GMbDF58p6qtCCOA9qNYuluHEgZt5awHLse2w0covXkFm9M1FE+DKEo0REXfJGiFNp7PU5V2uNEHu47r//bQUHct6
+
+  the following key to decrypt the email is encrypted using the company public key:
+  XeI4Pk2KMN4dCq+v87ky1k4XKRPZszhsvPJdgAdmQ2TApKroPLMDHiD7iiIPhZZ4dtZ1QUXs3bi0dy4haYqD2lecihandSmrTm4mrsTCFCj3tbgeq8U6qwZfhbL4AOIKIUu6VrO4gasOsDc1sFXJ0ZBtNLvDSimn+MWRfdLylEuG5xFI4rnBorJYLJURJVOSa+okT57HJYO5IizBpVaED3Jh8spED54nNXta+UBuTIZgys5IlF4ENfRVm6QuQLCluDQnxYPGmdzTIm72lB9pvDr1+4P06YN+OhgDzK/e9xV0c9IJ2Lh9YxaeKO7tAKl3dRA3Aq78Z9wrwij8j68Q1g==
+
+  Signature to verify the mail:
+  SUOKE6II2Z2qaEEO7sJybk4aOtRQopq8JYDuPkaa1+jwk3vBybTvnhnD2DLUZxNZg8/d78uSAywNmqmYWImeH9Q57i9fBSmWqs8ZCkoHJDADExcRpHk8HgaW5zPJllBQWObgznyUZH829eRnB9ISPbVoVkM2vLCupxiipgS0zTGL4ZPp5fzPZspAtxMwsKq3qVJZfcpnuq66RbScY5RtGUFa+mXWVcdXMmUMzhBbCkIre/MaSdPSxp+mJqdSc+LjwbnaxKQ8GQbbG5ymbOT4EIr34DthblvNBy9aREbxFHVwMS+hVrav0p1o+2U6UZZk6HqM1WeWS1O1SaSFSzaXuQ==
+
 
 * Bonus Objective 3\.
-  * [ ]  Add a "Create/Verify Checksum" section to the Encryption Tools area.
+  * [x]  Add a "Create/Verify Checksum" section to the Encryption Tools area.
 
 * Advanced Objective 1\.
-  * [ ]  Add support for other symmetric algorithms.
+  * [x]  Add support for other symmetric algorithms.
 
 ## Video Walkthrough
 
