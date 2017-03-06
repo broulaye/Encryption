@@ -28,9 +28,6 @@
 
     $encrypted_text = pkey_encrypt($data, $agent['public_key']);
     $signature = create_signature($encrypted_text, $sender['private_key']);
-    // I'm sorry, did you need this code? ;)
-    // Guess you'll just have to re-write it.
-    // With love, Dark Shadow
 
 
 

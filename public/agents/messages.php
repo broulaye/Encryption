@@ -60,11 +60,6 @@
             $message_text = pkey_decrypt($message_text, $agent['private_key']);
           }
 
-
-          // Oooops.
-          // My finger accidentally hit the delete-key.
-          // Sorry, APEX!!!
-
         ?>
         <tr>
           <td><?php echo h(strftime('%b %d, %Y at %H:%M', $created_at)); ?></td>

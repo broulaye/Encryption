@@ -3,9 +3,9 @@
 // Symmetric Encryption
 
 // Cipher method to use for symmetric encryption
-const CIPHER_METHOD = 'AES-256-CBC';
+//const CIPHER_METHOD = 'AES-256-CBC';
 
-function key_encrypt($string, $key, $cipher_method=CIPHER_METHOD) {
+function key_encrypt($string, $key, $cipher_method) {
   // Needs a key of length 32 (256-bit)
   $key = str_pad($key, 32, '*');
 
@@ -26,7 +26,7 @@ function key_encrypt($string, $key, $cipher_method=CIPHER_METHOD) {
   return base64_encode($message);
 }
 
-function key_decrypt($string, $key, $cipher_method=CIPHER_METHOD) {
+function key_decrypt($string, $key, $cipher_method) {
   // Needs a key of length 32 (256-bit)
   $key = str_pad($key, 32, '*');
 
@@ -101,5 +101,43 @@ function verify_signature($data, $signature, $public_key) {
   $result = openssl_verify($data, $raw_signature, $public_key);
   return $result;
 }
+
+
+function create_checksum($data, $checksum_algorithm) {
+  $result = '';
+
+  if($checksum_algorithm == 'crc32') {
+    $result = crc32($data);
+  }
+  elseif($checksum_algorithm == 'md5') {
+    $result = md5($data);
+  }
+  else {
+    $result = sha1($data);
+  }
+
+  return $result;
+}
+
+function verify_checksum($data, $checksum, $checksum_algorithm) {
+  $result = '';
+
+  if($checksum_algorithm == 'crc32') {
+    $result = crc32($data);
+  }
+  elseif($checksum_algorithm == 'md5') {
+    $result = md5($data);
+  }
+  else {
+    $result = sha1($data);
+  }
+
+  if($result == $checksum) {
+    return 1;
+  }
+
+  return 0;
+}
+
 
 ?>
